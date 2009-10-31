@@ -4,6 +4,4 @@
 
 }
 
--(void)applicationDidFinishLaunching:(NSNotification*)n;
-
 @end

@@ -4,7 +4,7 @@
 
 @implementation App
 
--(void)applicationDidFinishLaunching:(NSNotification*)n {
+-(void)awakeFromNib {
     NSAppleEventManager *appleEventManager = [NSAppleEventManager sharedAppleEventManager];
     [appleEventManager setEventHandler:self andSelector:@selector(handleGetURLEvent:withReplyEvent:) forEventClass:kInternetEventClass andEventID:kAEGetURL];
 }
