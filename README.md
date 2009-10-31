@@ -29,6 +29,16 @@ Open terminal and type:
 
 or just click [this link](emacs://open/?url=file:///etc/hosts)
 
+
+Uninstalling
+------------
+
+Delete following:
+
+    /Applications/EmacsHandler.app
+    ~/Library/Preferences/org.unknownplace.emacshandler.plist
+
+
 Author
 ------
 
