@@ -36,6 +36,10 @@
             }
         }
     }
+
+    if (![prefPanel isVisible]) {
+        [NSApp terminate:self];
+    }
 }
 
 -(IBAction)showPrefPanel:(id)sender {
