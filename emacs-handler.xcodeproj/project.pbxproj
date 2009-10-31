@@ -11,6 +11,8 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		A07878C2109C002C004947EC /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = A07878BF109C002C004947EC /* App.m */; };
+		A07878C3109C002C004947EC /* NSURL+L0URLParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = A07878C1109C002C004947EC /* NSURL+L0URLParsing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		32CA4F630368D1EE00C91783 /* emacs-handler_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "emacs-handler_Prefix.pch"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* emacs-handler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "emacs-handler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A07878BE109C002C004947EC /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = App.h; path = Classes/App.h; sourceTree = "<group>"; };
+		A07878BF109C002C004947EC /* App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = App.m; path = Classes/App.m; sourceTree = "<group>"; };
+		A07878C0109C002C004947EC /* NSURL+L0URLParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+L0URLParsing.h"; path = "Classes/NSURL+L0URLParsing.h"; sourceTree = "<group>"; };
+		A07878C1109C002C004947EC /* NSURL+L0URLParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+L0URLParsing.m"; path = "Classes/NSURL+L0URLParsing.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A07878BE109C002C004947EC /* App.h */,
+				A07878BF109C002C004947EC /* App.m */,
+				A07878C0109C002C004947EC /* NSURL+L0URLParsing.h */,
+				A07878C1109C002C004947EC /* NSURL+L0URLParsing.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -167,6 +177,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				A07878C2109C002C004947EC /* App.m in Sources */,
+				A07878C3109C002C004947EC /* NSURL+L0URLParsing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,8 +213,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "emacs-handler_Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = "emacs-handler";
@@ -215,8 +226,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "emacs-handler_Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = "emacs-handler";
