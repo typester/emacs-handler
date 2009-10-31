@@ -7,6 +7,17 @@ This application enables your emacs to open files via hyperlinks starts with `em
 
 This URL format is same as TextMate's `txmt:` scheme described [here](http://manual.macromates.com/en/using_textmate_from_terminal#url_scheme_html)
 
+Requirements
+------------
+
+* Mac OS X (10.5 or 10.6)
+* Emacs
+
+Download
+--------
+
+[EmacsHandler-1.0.zip](http://cloud.github.com/downloads/typester/emacs-handler/EmacsHandler-1.0.zip) (Universal Binary)
+
 Installation
 ------------
 
