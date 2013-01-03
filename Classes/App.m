@@ -30,7 +30,7 @@
             if (file) {
                 NSTask *task = [[NSTask alloc] init];
                 [task setLaunchPath:path];
-                [task setArguments:[NSArray arrayWithObjects:@"-n", [NSString stringWithFormat:@"+%d:%d", [line integerValue], [column integerValue]], file, nil]];
+                [task setArguments:[NSArray arrayWithObjects:@"-n", [NSString stringWithFormat:@"+%ld:%ld", [line integerValue], [column integerValue]], file, nil]];
                 [task launch];
                 [task release];
             }
