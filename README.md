@@ -1,9 +1,10 @@
 EmacsURLHandler for OSX
 =======================
 
-This application enables your emacs to open files via hyperlinks starts with `emacs://` something like:
+This application enables your emacs to open files via hyperlinks starts with `emacs://` or `txmt://` something like:
 
     emacs://open/?url=file:///etc/passwd&line=10&column=2
+    txmt://open/?url=file:///etc/passwd&line=10&column=2
 
 This URL format is same as TextMate's `txmt:` scheme described [here](http://manual.macromates.com/en/using_textmate_from_terminal#url_scheme_html)
 
@@ -37,8 +38,9 @@ Test it
 Open terminal and type:
 
     open 'emacs://open/?url=file:///etc/hosts'
+    open 'txmt://open/?url=file:///etc/hosts'
 
-or just click [this link](emacs://open/?url=file:///etc/hosts)
+or just click [this link](emacs://open/?url=file:///etc/hosts) or [this](txmt://open/?url=file:///etc/hosts)
 
 
 Uninstalling
