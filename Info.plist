@@ -8,6 +8,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>emacs</string>
+				<string>txmt</string>
 			</array>
 			<key>CFBundleURLName</key>
 			<string>org.unknownplace.emacshandler</string>

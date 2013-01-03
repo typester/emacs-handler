@@ -16,6 +16,8 @@
     if (nil == path) return;
 
     // emacs://open/?url=file://~/.bash_profile&line=11&column=2
+    // or
+    // txmt://open/?url=file://~/.bash_profile&line=11&column=2
     NSURL *url = [NSURL URLWithString:[[event paramDescriptorForKeyword:keyDirectObject] stringValue]];
 
     if (url && [[url host] isEqualToString:@"open"]) {
