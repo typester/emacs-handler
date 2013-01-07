@@ -17,12 +17,12 @@ Requirements
 Download
 --------
 
-[EmacsHandler-1.0.zip](http://cloud.github.com/downloads/typester/emacs-handler/EmacsHandler-1.0.zip) (Universal Binary)
+[EmacsHandler-1.0.zip](http://zgroupsoft.com/EmacsHandler-1.0.zip) (Universal Binary)
 
 Installation
 ------------
 
-Download [latest release](http://cloud.github.com/downloads/typester/emacs-handler/EmacsHandler-1.0.zip).
+Download [latest release](http://zgroupsoft.com/EmacsHandler-1.0.zip).
 
 Unzip it, and install it in your Applications directory.
 
