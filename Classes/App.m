@@ -16,6 +16,8 @@
     if (nil == path) return;
 
     // emacs://open/?url=file://~/.bash_profile&line=11&column=2
+    // or
+    // txmt://open/?url=file://~/.bash_profile&line=11&column=2
     NSURL *url = [NSURL URLWithString:[[event paramDescriptorForKeyword:keyDirectObject] stringValue]];
 
     if (url && [[url host] isEqualToString:@"open"]) {
@@ -30,7 +32,7 @@
             if (file) {
                 NSTask *task = [[NSTask alloc] init];
                 [task setLaunchPath:path];
-                [task setArguments:[NSArray arrayWithObjects:@"-n", [NSString stringWithFormat:@"+%d:%d", [line integerValue], [column integerValue]], file, nil]];
+                [task setArguments:[NSArray arrayWithObjects:@"-n", [NSString stringWithFormat:@"+%ld:%ld", [line integerValue], [column integerValue]], file, nil]];
                 [task launch];
                 [task release];
             }
